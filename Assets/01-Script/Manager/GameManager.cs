@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         #region  Now Game Status
         if (GameStatus == Status.Menu)
         {
-            Debug.Log("GM : Now in Menu");
+            Player.Instance.PlayerReset();
         }
         if (GameStatus == Status.Play)
         {
@@ -74,5 +74,18 @@ public class GameManager : MonoBehaviour
             GameStatus = Status.Over;
         }
         #endregion
+    }
+
+    public void GameStatus_Menu()
+    {
+        GameStatus = Status.Menu;
+    }
+    public void GameStatus_Play()
+    {
+        GameStatus = Status.Play;
+    }
+    public void GameStatus_Over()
+    {
+        GameStatus = Status.Over;
     }
 }

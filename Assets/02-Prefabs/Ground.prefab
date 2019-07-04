@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3629467223955088327}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,8 +93,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791ad35fa2092bf41b6f751ac0fc2cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GroundCreator: {fileID: 0}
+  ReloadGround: 0
   groundType: 0
+  PlayerJumpForce: 300
+  RightSide: 0
+  PlayerSpeedSlow: 2
+  HurtOnce: 0
+  HurtDamage: 2
   m_GroundMoveSpeed: 2
+  m_player: {fileID: 0}
 --- !u!61 &3629467223955088327
 BoxCollider2D:
   m_ObjectHideFlags: 0
